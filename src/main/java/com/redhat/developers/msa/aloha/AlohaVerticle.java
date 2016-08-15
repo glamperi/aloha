@@ -88,7 +88,7 @@ public class AlohaVerticle extends AbstractVerticle {
 
     private String aloha() {
         String hostname = System.getenv().getOrDefault("HOSTNAME", "unknown");
-        return String.format("Aloha mai %s @ EP", hostname);
+        return String.format("Aloha mai-EP %s ", hostname);
     }
 
     private void alohaChaining(Handler<List<String>> resultHandler) {
